@@ -2,25 +2,18 @@
 
 \chapter{\uppercase{Implementation of your work}} % Main chapter title
 \label{chap4} % For referencing
-The implementation details of your work should be mentioned in this chapter.
-\section{\uppercase{Algorithm 1}}
-\begin{algorithm}
-\begin{algorithmic}[1]
-\State Get the number of variables $num$ 
-\State Start with an empty list $x$ $[~]$
-\For {each $n$ of $num$}
-	\State Get the $x$
-	\State  Get the $t$
-	\State Get the $w$
-\EndFor 
-\If {$xl$ == $s$} 
-	\State terminate with the failure message \textbf{failed}
-\Else
-	\State $z = x$
-\EndIf 
+The steps done in the implementation are as follows:
+\section{\uppercase{Preprocessing:}}
+The given dataset from the issue tracker has many unimportant things like punctuation, hyperlinks, stop words . These things are removed in the Preprocessing stage.
+\section{\uppercase{Feature Selection:}}
+The right features must be selected from this dataset and for this we need to find the right feature selecetion technique and some of the feature selection techniques that was used in this project are: Pos-tags, Tfidf, Word embeddings.
+\section{\uppercase{Classification:}}
+In this step we made  ue of staple classifiers to find out the accuracy of our method, We had to experiment on different classifiers to find out which shows good accuracy.
+\section{\uppercase{Ensemble Methods:}}
+After trying the normal classifiers we made use of Ensemble methods to find out if they improve the accuracy in classification.
+\section{\uppercase{Results:}}
+The results were genereated in the form of confusion matrix and analysed, We found that the Ensemble method XGBoost to give us high accuracy.
 
-\end{algorithmic}
-\end{algorithm}
 
 
 
